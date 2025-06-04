@@ -1,0 +1,189 @@
+/* Fuentes y colores */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+:root {
+    --color-primario: #00aaff;
+    --color-secundario: #00ff99;
+    --color-fondo: #1a1a1a;
+    --color-navbar: #0d0d0d;
+    --color-tarjeta: #222;
+    --color-texto: #ffffff;
+    --color-texto-secundario: #bbbbbb;
+    --color-destacado: #ff5050;
+}
+
+/* Estilo general */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----- HEADER ----- */
+header {
+    background-color: var(--color-navbar);
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    color: var(--color-primario);
+    font-size: 2.5em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+    color: var(--color-texto-secundario);
+}
+
+/* ----- NAVBAR ----- */
+nav {
+    background-color: var(--color-navbar);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-texto);
+    font-size: 1.2em;
+    padding: 10px 15px;
+    transition: color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    color: var(--color-secundario);
+    transform: scale(1.1);
+}
+
+/* ----- SECCIONES ----- */
+section {
+    margin: 40px auto;
+    max-width: 90%;
+    padding: 20px;
+    background-color: var(--color-tarjeta);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.5);
+}
+
+h2 {
+    color: var(--color-primario);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* ----- PRODUCTOS ----- */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    background-color: var(--color-navbar);
+    padding: 15px;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 170, 255, 0.5);
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* ----- PRECIOS ----- */
+.precio-original {
+    text-decoration: line-through;
+    color: var(--color-destacado);
+}
+
+.precio-oferta {
+    color: var(--color-secundario);
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* ----- BOTÓN DE COMPRA ----- */
+.btn-comprar {
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background 0.3s, transform 0.2s;
+}
+.logo {
+    width: 120px; /* Ajusta el tamaño según necesites */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+.btn-comprar:hover {
+    background-color: #0088cc;
+    transform: scale(1.1);
+}
+footer {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 -2px 10px rgba(255, 255, 255, 0.2);
+}
+
+.redes {
+    margin: 10px 0;
+}
+
+.redes a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.redes img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.redes img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
